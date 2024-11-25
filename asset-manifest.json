@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hangman.github.io/static/css/main.2fdab279.css",
+    "main.js": "/hangman.github.io/static/js/main.58ab0622.js",
+    "static/js/453.c666c9de.chunk.js": "/hangman.github.io/static/js/453.c666c9de.chunk.js",
+    "index.html": "/hangman.github.io/index.html",
+    "main.2fdab279.css.map": "/hangman.github.io/static/css/main.2fdab279.css.map",
+    "main.58ab0622.js.map": "/hangman.github.io/static/js/main.58ab0622.js.map",
+    "453.c666c9de.chunk.js.map": "/hangman.github.io/static/js/453.c666c9de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fdab279.css",
+    "static/js/main.58ab0622.js"
+  ]
+}
