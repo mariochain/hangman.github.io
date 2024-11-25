@@ -19,7 +19,7 @@ function GameOverDialog({ isOpen, gameStatus, word, score, streak, difficulty, o
                     </AlertDialogTitle>
                     <AlertDialogDescription>
                         {gameStatus === "won"
-                            ? `¡Ganaste! ¡Obtuviste ${POINTS_CONFIG[difficulty].winBonus} puntos extra!`
+                            ? `¡Ganaste! ¡Obtuviste ${POINTS_CONFIG[difficulty]?.winBonus} puntos extra!`
                             : `La palabra era: ${word}`}
                         <br />
                         Puntuación actual: {score}

@@ -2,6 +2,7 @@
   "name": "hangman-game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mariochain.github.io/hangman.github.io",
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.2",
     "@radix-ui/react-select": "^2.1.2",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.2.0",
     "lucide-react": "^0.460.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
