@@ -60,7 +60,12 @@ function App() {
   };
 
   const checkGameStatus = (newGuessedLetters) => {
-    const isWon = word.split("").every((letter) => newGuessedLetters.has(letter));
+    const isWon = word
+      .split("")
+      .filter((char) => char !== " ")
+      .every((letter) => newGuessedLetters
+        .has(letter));
+
     if (isWon) {
       setGameStatus("won");
       setScore((prev) => prev + POINTS_CONFIG[difficulty].winBonus);
@@ -112,7 +117,9 @@ function App() {
         <p className="text-2xl font-mono mb-4 text-center">
           {word
             .split("")
-            .map((letter) => (guessedLetters.has(letter) ? letter : "_"))
+            .map((letter) =>
+              letter === " " ? "\u00A0\u00A0" : guessedLetters.has(letter) ? letter : "_"
+            )
             .join(" ")}
         </p>
 
